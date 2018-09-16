@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Registro"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <EditText
+        android:id="@+id/lblApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Apellido"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="220dp"
+        android:layout_height="111dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="248dp">
+
+        <RadioButton
+            android:id="@+id/rbtSoltero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Soltero"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="262dp" />
+
+        <RadioButton
+            android:id="@+id/rbtCasado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Casado"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="317dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Guardar"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+</android.support.constraint.ConstraintLayout>
